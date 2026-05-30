@@ -237,7 +237,7 @@ section { position: relative; }
 /* ---------- Hero (scroll-scrubbed lotus) ---------- */
 .hero-track {
   position: relative;
-  height: 320vh;            /* scroll runway for the bloom */
+  height: 200vh;            /* scroll runway for the bloom */
   background: var(--cream);
 }
 .hero-sticky {
@@ -680,16 +680,16 @@ section { position: relative; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 920px) {
-  .hero-track { height: 260vh; }
+  .hero-track { height: 165vh; }
   .hero-frames { width: 100%; }
-  .hero-frames img { object-position: center 40%; opacity: 0.9; }
+  .hero-frames img { object-position: center 52%; opacity: 1; }
   .hero-cream-fade {
     width: 100%;
     background: linear-gradient(180deg,
-      rgba(251,247,239,0.92) 0%,
-      rgba(251,247,239,0.78) 38%,
-      rgba(251,247,239,0.55) 70%,
-      rgba(251,247,239,0.2) 100%);
+      rgba(251,247,239,0.94) 0%,
+      rgba(251,247,239,0.8) 24%,
+      rgba(251,247,239,0.4) 56%,
+      rgba(251,247,239,0.05) 86%);
   }
   .hero-copy { max-width: 100%; }
   .pillars { grid-template-columns: repeat(2, 1fr); }

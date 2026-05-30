@@ -8,13 +8,10 @@
      Troque NUMBER pelo número real (formato internacional, só dígitos):
      ex.: '5511999999999'. A mensagem já vai pré-preenchida. */
   var WHATSAPP = {
-    number: '',  // <-- inserir número real aqui (ex.: 5511999999999)
-    message: 'Oi, Glécia! Vim pela página e quero agendar minha sessão de acolhimento.'
+    link: 'https://w.app/nlj36k'  // link fixo de agendamento
   };
   function buildWhatsURL() {
-    var msg = encodeURIComponent(WHATSAPP.message);
-    if (WHATSAPP.number) return 'https://wa.me/' + WHATSAPP.number + '?text=' + msg;
-    return 'https://wa.me/?text=' + msg; // fallback: abre o WhatsApp para escolher contato
+    return WHATSAPP.link;
   }
   function applyWhats() {
     var url = buildWhatsURL();
